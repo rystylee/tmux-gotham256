@@ -9,15 +9,15 @@ set-option -g status-fg "colour14"
 # The format of status-left
 set-option -g status-left "\
 #[bg=colour11, fg=colour255, bold] TMUX #[bg=colour12, fg=colour11]⮀ \
-#[bg=colour12, fg=colour255, nobold]Pane #[bg=colour12, fg=colour8, nobold]⮁#[bg=colour12, fg=colour255, nobold] #P #[bg=colour11, fg=colour12]⮀ \
-#[bg=colour11, fg=colour255, nobold]Session #[bg=colour11, fg=colour8, nobold]⮁#[bg=colour11, fg=colour255, nobold] #S #[bg=colour8, fg=colour11]⮀ \
+#[bg=colour12, fg=colour255, nobold]Pane #[bg=colour12, fg=colour8, nobold]⮁#[bg=colour12, fg=colour255, nobold] #P #[bg=colour12, fg=colour8]⮁ \
+#[bg=colour12, fg=colour255, nobold]Session #[bg=colour12, fg=colour8, nobold]⮁#[bg=colour12, fg=colour255, nobold] #S #[bg=colour8, fg=colour12]⮀\
 "
 set-option -g status-left-length 75
 
 # The format of status-right
 set-option -g status-right "\
-#[bg=colour233, fg=colour11]⮂\
-#[bg=colour11, fg=colour255, nobold] CPU: #{cpu_icon} #{cpu_percentage} #[bg=colour11, fg=colour12]⮂\
+#[bg=colour233, fg=colour12]⮂\
+#[bg=colour12, fg=colour255, nobold] CPU: #{cpu_icon} #{cpu_percentage} #[bg=colour12, fg=colour8]⮃\
 #[bg=colour12, fg=colour255, nobold] %T #[bg=colour12, fg=colour11]⮂\
 #[bg=colour11, fg=colour255, nobold] %m/%d %a \
 "
@@ -36,8 +36,8 @@ set-window-option -g window-status-current-format "\
 set-window-option -g window-status-current-format "\
 #[bg=colour11, fg=colour233]⮀\
 #[bg=colour11, fg=colour255] Window #[bg=colour11, fg=colour8]⮁#[bg=colour11, fg=colour255] #I #[bg=colour12, fg=colour11]⮀\
-#[bg=colour12, fg=colour255] #W #[bg=colour11, fg=colour12]⮀\
-#[bg=colour11, fg=colour255] #{pane_current_path} #[bg=colour233, fg=colour11]⮀\
+#[bg=colour12, fg=colour255] #W #[bg=colour12, fg=colour8]⮁\
+#[bg=colour12, fg=colour255] #{pane_current_path} #[bg=colour233, fg=colour12]⮀\
 "
 
 # The color of pane border
